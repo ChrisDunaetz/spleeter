@@ -31,8 +31,8 @@ def main(argv):
     :param argv: Provided command line arguments.
     """
 
-    print("This should print")
-    
+    print("This should print!")
+
     try:
         parser = create_argument_parser()
         arguments = parser.parse_args(argv[1:])
