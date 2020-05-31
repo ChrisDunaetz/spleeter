@@ -159,6 +159,7 @@ class Separator(object):
             latest_checkpoint = tf.train.latest_checkpoint(get_default_model_dir(self._params['model_dir']))
             self._session = tf.Session()
             saver.restore(self._session, latest_checkpoint)
+        print("_get_session")
         return self._session
 
     def _separate_librosa(self, waveform, audio_id):
